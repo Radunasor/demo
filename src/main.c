@@ -3,6 +3,14 @@
 
 int main()
 {
-    get_impl_instance()->print_impl();
+    Iimpl *ptr = get_impl_instance();
+
+    ptr->initialize();
+
+    if (ptr->is_initialized())
+        ptr->print_impl();
+
+    ptr->destroy();
+
     return 0;
 }
