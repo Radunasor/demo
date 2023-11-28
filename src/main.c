@@ -3,7 +3,7 @@
 
 int main()
 {
-    Iimpl *ptr = get_impl_instance();
+    const Iimpl *ptr = get_impl_instance();
 
     ptr->initialize();
 
